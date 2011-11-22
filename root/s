@@ -1,0 +1,3 @@
+../os161-1.11/kern/conf/script
+sys161 kernel "p newtests/vm-crash1;q"
+sys161 kernel "p newtests/vm-crash2;q"

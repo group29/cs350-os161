@@ -1,0 +1,1484 @@
+Script started on Fri 11 Nov 2011 05:38:43 PM EST
+You have mail.
+2%>linux024:[1m~/cs350-os161/root[0m> ./script
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+make: Nothing to be done for `all'.
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #74)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]: 
+Suspended
+2%>linux024:[1m~/cs350-os161/root[0m> sys161 kernel p[Kp[K"p sys[K[K[Ktestp[Kbin/add 4[K2 4"
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #74)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel: p testbin/add 2 4
+stack 
+Suspended
+2%>linux024:[1m~/cs350-os161/root[0m> nano script
+[?1049h[1;22r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.4               File: script                                      [3;1H(B[m../os161-1.11/kern/conf/script[4dsys161 kernel[5dp testbin/add 2 4[20;33H(B[0;7m[ Read 3 lines ][21d^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[22d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[3d[4d[5d[1;72H(B[0;7mModified[4;14H(B[mp testbin/add 2 4[5d[K[4;14H p testbin/add 2 4[4;15H"p testbin/add 2 4[4;16Hp testbin/add 2 4[5d[4;33H"[20d[K[4;34H[20d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                     [21;1H Y(B[m Yes[K[22d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[20;62H(B[0;7mFile Name to Write: script                                  [21d^G(B[m Get Help[21;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[21;61H(B[0;7mM-B(B[m Backup File[22d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[20;27H[21d[39;49m(B[m[J[1;72H(B[0;7m        [20;32H(B[m[1K (B[0;7m[ Wrote 2 lines ](B[m[K[22;81H[22;1H[?1049l[?1l>2%>linux024:[1m~/cs350-os161/root[0m> mv script s
+2%>linux024:[1m~/cs350-os161/root[0m> chmod a+x s
+2%>linux024:[1m~/cs350-os161/root[0m> ./s
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../userprog/runprogram.c
+../../userprog/runprogram.c: In function ‘runprogram’:
+../../userprog/runprogram.c:81: warning: passing argument 2 of ‘copyoutstr’ makes pointer from integer without a cast
+../../userprog/runprogram.c:81: warning: pointer targets in passing argument 4 of ‘copyoutstr’ differ in signedness
+../../userprog/runprogram.c:95: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:103: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:107: warning: initialization makes pointer from integer without a cast
+../../userprog/runprogram.c:108: warning: format ‘%s’ expects type ‘char *’, but argument 2 has type ‘vaddr_t’
+../../conf/newvers.sh ASST2
+*** This is ASST2 build #75 ***
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c vers.c
+cs350-ld   -nostdlib -Ttext 0x80001000 -T ../../arch/mips/conf/ldscript -G 0 lhd.o emu.o random.o rtclock.o pseudorand.o ltrace.o lamebus.o console.o lser.o beep.o lrandom.o ltimer.o rtclock_ltimer.o emu_att.o random_lrandom.o beep_ltimer.o ltrace_att.o pseudorand_att.o con_lser.o lrandom_att.o lser_att.o lhd_att.o ltimer_att.o sfs_io.o sfs_fs.o sfs_vnode.o dumbvm.o cache_mips1.o exception.o lamebus_mips.o interrupt.o pcb.o ram.o spl.o start.o switch.o syscall.o threadstart.o trap.o tlb_mips1.o mips-setjmp.o copyinout.o array.o bitmap.o queue.o kheap.o kprintf.o kgets.o misc.o ntoh.o __printf.o snprintf.o atoi.o bzero.o memcpy.o memmove.o strcat.o strchr.o strcmp.o strcpy.o strlen.o strrchr.o strtok_r.o init.o device.o vfscwd.o vfslist.o vfslookup.o vfspath.o vnode.o devnull.o hardclock.o synch.o scheduler.o thread.o main.o menu.o hello.o loadelf.o runprogram.o uio.o filetablefunction.o userfile.o arraytest.o bitmaptest.o queuetest.o threadtest.o tt3.o synchtest.o malloctest.o fstest.o autoconf.o vers.o -o kernel
+cs350-size kernel
+   text	   data	    bss	    dec	    hex	filename
+ 162952	    448	   7668	 171068	  29c3c	kernel
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #75)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel: p testbin/add 2 4
+stack testbin/add
+sleep: Dropping thread <boot/menu>
+panic: md_usermode returned
+sys161: 3709569 cycles (2408125 run, 1301444 global-idle)
+sys161:   cpu0: 2408125 kern, 0 user, 0 idle)
+sys161: 617 irqs 12 exns 0r/0w disk 0r/661w console 8r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 0.142681 seconds (25.999 mhz)
+sys161: Elapsed virtual time: 0.148382777 seconds (25 mhz)
+2%>linux024:[1m~/cs350-os161/root[0m> ./schmod a+x s[33G./s[K
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../userprog/runprogram.c
+../../userprog/runprogram.c: In function ‘runprogram’:
+../../userprog/runprogram.c:81: warning: passing argument 2 of ‘copyoutstr’ makes pointer from integer without a cast
+../../userprog/runprogram.c:81: warning: pointer targets in passing argument 4 of ‘copyoutstr’ differ in signedness
+../../userprog/runprogram.c:95: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:103: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:107: warning: initialization makes pointer from integer without a cast
+../../userprog/runprogram.c:108: warning: format ‘%s’ expects type ‘char *’, but argument 2 has type ‘vaddr_t’
+../../conf/newvers.sh ASST2
+*** This is ASST2 build #76 ***
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c vers.c
+cs350-ld   -nostdlib -Ttext 0x80001000 -T ../../arch/mips/conf/ldscript -G 0 lhd.o emu.o random.o rtclock.o pseudorand.o ltrace.o lamebus.o console.o lser.o beep.o lrandom.o ltimer.o rtclock_ltimer.o emu_att.o random_lrandom.o beep_ltimer.o ltrace_att.o pseudorand_att.o con_lser.o lrandom_att.o lser_att.o lhd_att.o ltimer_att.o sfs_io.o sfs_fs.o sfs_vnode.o dumbvm.o cache_mips1.o exception.o lamebus_mips.o interrupt.o pcb.o ram.o spl.o start.o switch.o syscall.o threadstart.o trap.o tlb_mips1.o mips-setjmp.o copyinout.o array.o bitmap.o queue.o kheap.o kprintf.o kgets.o misc.o ntoh.o __printf.o snprintf.o atoi.o bzero.o memcpy.o memmove.o strcat.o strchr.o strcmp.o strcpy.o strlen.o strrchr.o strtok_r.o init.o device.o vfscwd.o vfslist.o vfslookup.o vfspath.o vnode.o devnull.o hardclock.o synch.o scheduler.o thread.o main.o menu.o hello.o loadelf.o runprogram.o uio.o filetablefunction.o userfile.o arraytest.o bitmaptest.o queuetest.o threadtest.o tt3.o synchtest.o malloctest.o fstest.o autoconf.o vers.o -o kernel
+cs350-size kernel
+   text	   data	    bss	    dec	    hex	filename
+ 162952	    448	   7668	 171068	  29c3c	kernel
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #76)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel: p testbin/add 2 4
+stack 2
+sleep: Dropping thread <boot/menu>
+panic: md_usermode returned
+sys161: 3662483 cycles (2367641 run, 1294842 global-idle)
+sys161:   cpu0: 2367641 kern, 0 user, 0 idle)
+sys161: 609 irqs 6 exns 0r/0w disk 0r/651w console 8r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 0.149116 seconds (24.5613 mhz)
+sys161: Elapsed virtual time: 0.146499337 seconds (25 mhz)
+2%>linux024:[1m~/cs350-os161/root[0m> ./s
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../userprog/runprogram.c
+../../userprog/runprogram.c: In function ‘runprogram’:
+../../userprog/runprogram.c:81: warning: passing argument 2 of ‘copyoutstr’ makes pointer from integer without a cast
+../../userprog/runprogram.c:81: warning: pointer targets in passing argument 4 of ‘copyoutstr’ differ in signedness
+../../userprog/runprogram.c:95: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:103: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:107: warning: initialization makes pointer from integer without a cast
+../../userprog/runprogram.c:108: warning: format ‘%s’ expects type ‘char *’, but argument 2 has type ‘vaddr_t’
+../../conf/newvers.sh ASST2
+*** This is ASST2 build #77 ***
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c vers.c
+cs350-ld   -nostdlib -Ttext 0x80001000 -T ../../arch/mips/conf/ldscript -G 0 lhd.o emu.o random.o rtclock.o pseudorand.o ltrace.o lamebus.o console.o lser.o beep.o lrandom.o ltimer.o rtclock_ltimer.o emu_att.o random_lrandom.o beep_ltimer.o ltrace_att.o pseudorand_att.o con_lser.o lrandom_att.o lser_att.o lhd_att.o ltimer_att.o sfs_io.o sfs_fs.o sfs_vnode.o dumbvm.o cache_mips1.o exception.o lamebus_mips.o interrupt.o pcb.o ram.o spl.o start.o switch.o syscall.o threadstart.o trap.o tlb_mips1.o mips-setjmp.o copyinout.o array.o bitmap.o queue.o kheap.o kprintf.o kgets.o misc.o ntoh.o __printf.o snprintf.o atoi.o bzero.o memcpy.o memmove.o strcat.o strchr.o strcmp.o strcpy.o strlen.o strrchr.o strtok_r.o init.o device.o vfscwd.o vfslist.o vfslookup.o vfspath.o vnode.o devnull.o hardclock.o synch.o scheduler.o thread.o main.o menu.o hello.o loadelf.o runprogram.o uio.o filetablefunction.o userfile.o arraytest.o bitmaptest.o queuetest.o threadtest.o tt3.o synchtest.o malloctest.o fstest.o autoconf.o vers.o -o kernel
+cs350-size kernel
+   text	   data	    bss	    dec	    hex	filename
+ 162952	    448	   7668	 171068	  29c3c	kernel
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #77)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel: p testbin/add 2 4
+stack 4
+sleep: Dropping thread <boot/menu>
+panic: md_usermode returned
+sys161: 3660450 cycles (2364807 run, 1295643 global-idle)
+sys161:   cpu0: 2364807 kern, 0 user, 0 idle)
+sys161: 606 irqs 6 exns 0r/0w disk 0r/651w console 8r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 0.149578 seconds (24.4718 mhz)
+sys161: Elapsed virtual time: 0.146418017 seconds (25 mhz)
+2%>linux024:[1m~/cs350-os161/root[0m> ./s
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../userprog/runprogram.c
+../../userprog/runprogram.c: In function ‘runprogram’:
+../../userprog/runprogram.c:81: warning: passing argument 2 of ‘copyoutstr’ makes pointer from integer without a cast
+../../userprog/runprogram.c:81: warning: pointer targets in passing argument 4 of ‘copyoutstr’ differ in signedness
+../../userprog/runprogram.c:95: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:103: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:107: warning: initialization makes pointer from integer without a cast
+../../userprog/runprogram.c:108: warning: format ‘%s’ expects type ‘char *’, but argument 2 has type ‘vaddr_t’
+../../conf/newvers.sh ASST2
+*** This is ASST2 build #78 ***
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c vers.c
+cs350-ld   -nostdlib -Ttext 0x80001000 -T ../../arch/mips/conf/ldscript -G 0 lhd.o emu.o random.o rtclock.o pseudorand.o ltrace.o lamebus.o console.o lser.o beep.o lrandom.o ltimer.o rtclock_ltimer.o emu_att.o random_lrandom.o beep_ltimer.o ltrace_att.o pseudorand_att.o con_lser.o lrandom_att.o lser_att.o lhd_att.o ltimer_att.o sfs_io.o sfs_fs.o sfs_vnode.o dumbvm.o cache_mips1.o exception.o lamebus_mips.o interrupt.o pcb.o ram.o spl.o start.o switch.o syscall.o threadstart.o trap.o tlb_mips1.o mips-setjmp.o copyinout.o array.o bitmap.o queue.o kheap.o kprintf.o kgets.o misc.o ntoh.o __printf.o snprintf.o atoi.o bzero.o memcpy.o memmove.o strcat.o strchr.o strcmp.o strcpy.o strlen.o strrchr.o strtok_r.o init.o device.o vfscwd.o vfslist.o vfslookup.o vfspath.o vnode.o devnull.o hardclock.o synch.o scheduler.o thread.o main.o menu.o hello.o loadelf.o runprogram.o uio.o filetablefunction.o userfile.o arraytest.o bitmaptest.o queuetest.o threadtest.o tt3.o synchtest.o malloctest.o fstest.o autoconf.o vers.o -o kernel
+cs350-size kernel
+   text	   data	    bss	    dec	    hex	filename
+ 162952	    448	   7668	 171068	  29c3c	kernel
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #78)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel: p testbin/add 2 4
+stack (null)
+sleep: Dropping thread <boot/menu>
+panic: md_usermode returned
+sys161: 3686785 cycles (2391059 run, 1295726 global-idle)
+sys161:   cpu0: 2391059 kern, 0 user, 0 idle)
+sys161: 613 irqs 5 exns 0r/0w disk 0r/656w console 8r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 0.151026 seconds (24.4116 mhz)
+sys161: Elapsed virtual time: 0.147471417 seconds (25 mhz)
+2%>linux024:[1m~/cs350-os161/root[0m> ./s
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../userprog/runprogram.c
+../../userprog/runprogram.c: In function ‘runprogram’:
+../../userprog/runprogram.c:81: warning: passing argument 2 of ‘copyoutstr’ makes pointer from integer without a cast
+../../userprog/runprogram.c:81: warning: pointer targets in passing argument 4 of ‘copyoutstr’ differ in signedness
+../../userprog/runprogram.c:95: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:103: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:107: warning: initialization makes pointer from integer without a cast
+../../userprog/runprogram.c:108: warning: format ‘%s’ expects type ‘char *’, but argument 2 has type ‘vaddr_t’
+../../conf/newvers.sh ASST2
+*** This is ASST2 build #79 ***
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c vers.c
+cs350-ld   -nostdlib -Ttext 0x80001000 -T ../../arch/mips/conf/ldscript -G 0 lhd.o emu.o random.o rtclock.o pseudorand.o ltrace.o lamebus.o console.o lser.o beep.o lrandom.o ltimer.o rtclock_ltimer.o emu_att.o random_lrandom.o beep_ltimer.o ltrace_att.o pseudorand_att.o con_lser.o lrandom_att.o lser_att.o lhd_att.o ltimer_att.o sfs_io.o sfs_fs.o sfs_vnode.o dumbvm.o cache_mips1.o exception.o lamebus_mips.o interrupt.o pcb.o ram.o spl.o start.o switch.o syscall.o threadstart.o trap.o tlb_mips1.o mips-setjmp.o copyinout.o array.o bitmap.o queue.o kheap.o kprintf.o kgets.o misc.o ntoh.o __printf.o snprintf.o atoi.o bzero.o memcpy.o memmove.o strcat.o strchr.o strcmp.o strcpy.o strlen.o strrchr.o strtok_r.o init.o device.o vfscwd.o vfslist.o vfslookup.o vfspath.o vnode.o devnull.o hardclock.o synch.o scheduler.o thread.o main.o menu.o hello.o loadelf.o runprogram.o uio.o filetablefunction.o userfile.o arraytest.o bitmaptest.o queuetest.o threadtest.o tt3.o synchtest.o malloctest.o fstest.o autoconf.o vers.o -o kernel
+cs350-size kernel
+   text	   data	    bss	    dec	    hex	filename
+ 162952	    448	   7668	 171068	  29c3c	kernel
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #79)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel: p testbin/add 2 4
+stack 
+Suspended
+2%>linux024:[1m~/cs350-os161/root[0m> ./s
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../userprog/runprogram.c
+../../userprog/runprogram.c: In function ‘runprogram’:
+../../userprog/runprogram.c:81: warning: passing argument 2 of ‘copyoutstr’ makes pointer from integer without a cast
+../../userprog/runprogram.c:81: warning: pointer targets in passing argument 4 of ‘copyoutstr’ differ in signedness
+../../userprog/runprogram.c:95: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:103: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:107: warning: initialization makes pointer from integer without a cast
+../../userprog/runprogram.c:107: warning: unused variable ‘ad’
+../../conf/newvers.sh ASST2
+*** This is ASST2 build #80 ***
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c vers.c
+cs350-ld   -nostdlib -Ttext 0x80001000 -T ../../arch/mips/conf/ldscript -G 0 lhd.o emu.o random.o rtclock.o pseudorand.o ltrace.o lamebus.o console.o lser.o beep.o lrandom.o ltimer.o rtclock_ltimer.o emu_att.o random_lrandom.o beep_ltimer.o ltrace_att.o pseudorand_att.o con_lser.o lrandom_att.o lser_att.o lhd_att.o ltimer_att.o sfs_io.o sfs_fs.o sfs_vnode.o dumbvm.o cache_mips1.o exception.o lamebus_mips.o interrupt.o pcb.o ram.o spl.o start.o switch.o syscall.o threadstart.o trap.o tlb_mips1.o mips-setjmp.o copyinout.o array.o bitmap.o queue.o kheap.o kprintf.o kgets.o misc.o ntoh.o __printf.o snprintf.o atoi.o bzero.o memcpy.o memmove.o strcat.o strchr.o strcmp.o strcpy.o strlen.o strrchr.o strtok_r.o init.o device.o vfscwd.o vfslist.o vfslookup.o vfspath.o vnode.o devnull.o hardclock.o synch.o scheduler.o thread.o main.o menu.o hello.o loadelf.o runprogram.o uio.o filetablefunction.o userfile.o arraytest.o bitmaptest.o queuetest.o threadtest.o tt3.o synchtest.o malloctest.o fstest.o autoconf.o vers.o -o kernel
+cs350-size kernel
+   text	   data	    bss	    dec	    hex	filename
+ 162936	    448	   7668	 171052	  29c2c	kernel
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #80)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel: p testbin/add 2 4
+stack 3
+sleep: Dropping thread <boot/menu>
+panic: md_usermode returned
+sys161: 3664102 cycles (2366940 run, 1297162 global-idle)
+sys161:   cpu0: 2366940 kern, 0 user, 0 idle)
+sys161: 606 irqs 5 exns 0r/0w disk 0r/651w console 8r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 0.149037 seconds (24.5852 mhz)
+sys161: Elapsed virtual time: 0.146564097 seconds (25 mhz)
+2%>linux024:[1m~/cs350-os161/root[0m> 
+2%>linux024:[1m~/cs350-os161/root[0m> 
+2%>linux024:[1m~/cs350-os161/root[0m> ./s
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../userprog/runprogram.c
+../../userprog/runprogram.c: In function ‘runprogram’:
+../../userprog/runprogram.c:81: warning: passing argument 2 of ‘copyoutstr’ makes pointer from integer without a cast
+../../userprog/runprogram.c:81: warning: pointer targets in passing argument 4 of ‘copyoutstr’ differ in signedness
+../../userprog/runprogram.c:95: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:103: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:107: warning: initialization makes pointer from integer without a cast
+../../userprog/runprogram.c:108: warning: format ‘%s’ expects type ‘char *’, but argument 2 has type ‘vaddr_t’
+../../conf/newvers.sh ASST2
+*** This is ASST2 build #81 ***
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c vers.c
+cs350-ld   -nostdlib -Ttext 0x80001000 -T ../../arch/mips/conf/ldscript -G 0 lhd.o emu.o random.o rtclock.o pseudorand.o ltrace.o lamebus.o console.o lser.o beep.o lrandom.o ltimer.o rtclock_ltimer.o emu_att.o random_lrandom.o beep_ltimer.o ltrace_att.o pseudorand_att.o con_lser.o lrandom_att.o lser_att.o lhd_att.o ltimer_att.o sfs_io.o sfs_fs.o sfs_vnode.o dumbvm.o cache_mips1.o exception.o lamebus_mips.o interrupt.o pcb.o ram.o spl.o start.o switch.o syscall.o threadstart.o trap.o tlb_mips1.o mips-setjmp.o copyinout.o array.o bitmap.o queue.o kheap.o kprintf.o kgets.o misc.o ntoh.o __printf.o snprintf.o atoi.o bzero.o memcpy.o memmove.o strcat.o strchr.o strcmp.o strcpy.o strlen.o strrchr.o strtok_r.o init.o device.o vfscwd.o vfslist.o vfslookup.o vfspath.o vnode.o devnull.o hardclock.o synch.o scheduler.o thread.o main.o menu.o hello.o loadelf.o runprogram.o uio.o filetablefunction.o userfile.o arraytest.o bitmaptest.o queuetest.o threadtest.o tt3.o synchtest.o malloctest.o fstest.o autoconf.o vers.o -o kernel
+cs350-size kernel
+   text	   data	    bss	    dec	    hex	filename
+ 162952	    448	   7668	 171068	  29c3c	kernel
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #81)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel: p testbin/add 2 4
+stack (null)
+sleep: Dropping thread <boot/menu>
+panic: md_usermode returned
+sys161: 3683657 cycles (2388670 run, 1294987 global-idle)
+sys161:   cpu0: 2388670 kern, 0 user, 0 idle)
+sys161: 611 irqs 5 exns 0r/0w disk 0r/656w console 8r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 0.142227 seconds (25.8998 mhz)
+sys161: Elapsed virtual time: 0.147346297 seconds (25 mhz)
+2%>linux024:[1m~/cs350-os161/root[0m> 
+2%>linux024:[1m~/cs350-os161/root[0m> 
+2%>linux024:[1m~/cs350-os161/root[0m> ./s
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../userprog/runprogram.c
+../../userprog/runprogram.c: In function ‘runprogram’:
+../../userprog/runprogram.c:81: warning: passing argument 2 of ‘copyoutstr’ makes pointer from integer without a cast
+../../userprog/runprogram.c:81: warning: pointer targets in passing argument 4 of ‘copyoutstr’ differ in signedness
+../../userprog/runprogram.c:95: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:103: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:107: warning: initialization makes pointer from integer without a cast
+../../userprog/runprogram.c:108: error: ‘ad’ undeclared (first use in this function)
+../../userprog/runprogram.c:108: error: (Each undeclared identifier is reported only once
+../../userprog/runprogram.c:108: error: for each function it appears in.)
+../../userprog/runprogram.c:116: warning: passing argument 2 of ‘md_usermode’ from incompatible pointer type
+make: *** [runprogram.o] Error 1
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #81)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel: p testbin/add 2 4
+stack (null)
+sleep: Dropping thread <boot/menu>
+panic: md_usermode returned
+sys161: 3693592 cycles (2393834 run, 1299758 global-idle)
+sys161:   cpu0: 2393834 kern, 0 user, 0 idle)
+sys161: 612 irqs 6 exns 0r/0w disk 0r/656w console 8r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 0.141276 seconds (26.1445 mhz)
+sys161: Elapsed virtual time: 0.147743697 seconds (25 mhz)
+2%>linux024:[1m~/cs350-os161/root[0m> ./s
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../userprog/runprogram.c
+../../userprog/runprogram.c: In function ‘runprogram’:
+../../userprog/runprogram.c:81: warning: passing argument 2 of ‘copyoutstr’ makes pointer from integer without a cast
+../../userprog/runprogram.c:81: warning: pointer targets in passing argument 4 of ‘copyoutstr’ differ in signedness
+../../userprog/runprogram.c:95: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:103: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:107: warning: initialization makes pointer from integer without a cast
+../../userprog/runprogram.c:108: error: ‘ad’ undeclared (first use in this function)
+../../userprog/runprogram.c:108: error: (Each undeclared identifier is reported only once
+../../userprog/runprogram.c:108: error: for each function it appears in.)
+../../userprog/runprogram.c:115: warning: passing argument 2 of ‘md_usermode’ from incompatible pointer type
+make: *** [runprogram.o] Error 1
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #81)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel: p testbin/add 2 4
+stack (null)
+sleep: Dropping thread <boot/menu>
+panic: md_usermode returned
+sys161: 3684115 cycles (2388830 run, 1295285 global-idle)
+sys161:   cpu0: 2388830 kern, 0 user, 0 idle)
+sys161: 611 irqs 5 exns 0r/0w disk 0r/656w console 8r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 0.150683 seconds (24.4494 mhz)
+sys161: Elapsed virtual time: 0.147364617 seconds (25 mhz)
+2%>linux024:[1m~/cs350-os161/root[0m> 
+2%>linux024:[1m~/cs350-os161/root[0m> 
+2%>linux024:[1m~/cs350-os161/root[0m> ./s
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../userprog/runprogram.c
+../../userprog/runprogram.c: In function ‘runprogram’:
+../../userprog/runprogram.c:81: warning: passing argument 2 of ‘copyoutstr’ makes pointer from integer without a cast
+../../userprog/runprogram.c:81: warning: pointer targets in passing argument 4 of ‘copyoutstr’ differ in signedness
+../../userprog/runprogram.c:95: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:103: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:107: warning: initialization makes pointer from integer without a cast
+../../userprog/runprogram.c:108: error: ‘ad’ undeclared (first use in this function)
+../../userprog/runprogram.c:108: error: (Each undeclared identifier is reported only once
+../../userprog/runprogram.c:108: error: for each function it appears in.)
+make: *** [runprogram.o] Error 1
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #81)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel: p testbin/add 2 4
+stack (null)
+sleep: Dropping thread <boot/menu>
+panic: md_usermode returned
+sys161: 3684869 cycles (2387891 run, 1296978 global-idle)
+sys161:   cpu0: 2387891 kern, 0 user, 0 idle)
+sys161: 610 irqs 5 exns 0r/0w disk 0r/656w console 8r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 0.142585 seconds (25.8433 mhz)
+sys161: Elapsed virtual time: 0.147394777 seconds (25 mhz)
+2%>linux024:[1m~/cs350-os161/root[0m> ./s
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../userprog/runprogram.c
+../../userprog/runprogram.c: In function ‘runprogram’:
+../../userprog/runprogram.c:81: warning: passing argument 2 of ‘copyoutstr’ makes pointer from integer without a cast
+../../userprog/runprogram.c:81: warning: pointer targets in passing argument 4 of ‘copyoutstr’ differ in signedness
+../../userprog/runprogram.c:95: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:103: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:107: warning: initialization makes pointer from integer without a cast
+../../userprog/runprogram.c:108: error: ‘ad’ undeclared (first use in this function)
+../../userprog/runprogram.c:108: error: (Each undeclared identifier is reported only once
+../../userprog/runprogram.c:108: error: for each function it appears in.)
+../../userprog/runprogram.c:107: warning: unused variable ‘user_stack’
+make: *** [runprogram.o] Error 1
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #81)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel: p testbin/add 2 4
+stack (null)
+sleep: Dropping thread <boot/menu>
+panic: md_usermode returned
+sys161: 3692572 cycles (2391417 run, 1301155 global-idle)
+sys161:   cpu0: 2391417 kern, 0 user, 0 idle)
+sys161: 611 irqs 6 exns 0r/0w disk 0r/656w console 8r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 0.141558 seconds (26.0852 mhz)
+sys161: Elapsed virtual time: 0.147702897 seconds (25 mhz)
+2%>linux024:[1m~/cs350-os161/root[0m> 
+[K2%>linux024:[1m~/cs350-os161/root[0m> 
+2%>linux024:[1m~/cs350-os161/root[0m> 
+2%>linux024:[1m~/cs350-os161/root[0m> ./s
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../userprog/runprogram.c
+../../userprog/runprogram.c: In function ‘runprogram’:
+../../userprog/runprogram.c:82: warning: passing argument 2 of ‘copyoutstr’ makes pointer from integer without a cast
+../../userprog/runprogram.c:82: warning: pointer targets in passing argument 4 of ‘copyoutstr’ differ in signedness
+../../userprog/runprogram.c:96: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:104: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:108: warning: initialization makes pointer from integer without a cast
+../../userprog/runprogram.c:109: error: ‘ad’ undeclared (first use in this function)
+../../userprog/runprogram.c:109: error: (Each undeclared identifier is reported only once
+../../userprog/runprogram.c:109: error: for each function it appears in.)
+../../userprog/runprogram.c:108: warning: unused variable ‘user_stack’
+make: *** [runprogram.o] Error 1
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #81)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel: p testbin/add 2 4
+stack (null)
+sleep: Dropping thread <boot/menu>
+panic: md_usermode returned
+sys161: 3684485 cycles (2388671 run, 1295814 global-idle)
+sys161:   cpu0: 2388671 kern, 0 user, 0 idle)
+sys161: 610 irqs 5 exns 0r/0w disk 0r/656w console 8r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 0.150332 seconds (24.509 mhz)
+sys161: Elapsed virtual time: 0.147379417 seconds (25 mhz)
+2%>linux024:[1m~/cs350-os161/root[0m> 
+2%>linux024:[1m~/cs350-os161/root[0m> 
+2%>linux024:[1m~/cs350-os161/root[0m> ./s
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../userprog/runprogram.c
+../../userprog/runprogram.c: In function ‘runprogram’:
+../../userprog/runprogram.c:51: error: ‘struct addrspace’ has no member named ‘elf_vnode’
+../../userprog/runprogram.c:81: warning: passing argument 2 of ‘copyoutstr’ makes pointer from integer without a cast
+../../userprog/runprogram.c:94: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:98: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:104: warning: initialization makes pointer from integer without a cast
+make: *** [runprogram.o] Error 1
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #81)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel: p testbin/add 2 4
+stack (null)
+sleep: Dropping thread <boot/menu>
+panic: md_usermode returned
+sys161: 3683416 cycles (2389353 run, 1294063 global-idle)
+sys161:   cpu0: 2389353 kern, 0 user, 0 idle)
+sys161: 611 irqs 5 exns 0r/0w disk 0r/656w console 8r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 0.150641 seconds (24.4516 mhz)
+sys161: Elapsed virtual time: 0.147336657 seconds (25 mhz)
+2%>linux024:[1m~/cs350-os161/root[0m> ./s
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../userprog/runprogram.c
+../../userprog/runprogram.c: In function ‘runprogram’:
+../../userprog/runprogram.c:51: error: ‘struct addrspace’ has no member named ‘elf_vnode’
+../../userprog/runprogram.c:81: warning: passing argument 2 of ‘copyoutstr’ makes pointer from integer without a cast
+../../userprog/runprogram.c:94: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:98: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:104: warning: initialization makes pointer from integer without a cast
+make: *** [runprogram.o] Error 1
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #81)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel: p testbin/add 2 4
+stack (null)
+sleep: Dropping thread <boot/menu>
+panic: md_usermode returned
+sys161: 3685489 cycles (2389582 run, 1295907 global-idle)
+sys161:   cpu0: 2389582 kern, 0 user, 0 idle)
+sys161: 612 irqs 5 exns 0r/0w disk 0r/656w console 8r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 0.146236 seconds (25.2023 mhz)
+sys161: Elapsed virtual time: 0.147419577 seconds (25 mhz)
+2%>linux024:[1m~/cs350-os161/root[0m> 
+2%>linux024:[1m~/cs350-os161/root[0m> 
+2%>linux024:[1m~/cs350-os161/root[0m> ./s
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../userprog/runprogram.c
+../../userprog/runprogram.c: In function ‘runprogram’:
+../../userprog/runprogram.c:82: warning: passing argument 2 of ‘copyoutstr’ makes pointer from integer without a cast
+../../userprog/runprogram.c:82: warning: pointer targets in passing argument 4 of ‘copyoutstr’ differ in signedness
+../../userprog/runprogram.c:96: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:104: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:108: warning: initialization makes pointer from integer without a cast
+../../userprog/runprogram.c:109: error: ‘ad’ undeclared (first use in this function)
+../../userprog/runprogram.c:109: error: (Each undeclared identifier is reported only once
+../../userprog/runprogram.c:109: error: for each function it appears in.)
+../../userprog/runprogram.c:108: warning: unused variable ‘user_stack’
+make: *** [runprogram.o] Error 1
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #81)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel: p testbin/add 2 4
+stack (null)
+sleep: Dropping thread <boot/menu>
+panic: md_usermode returned
+sys161: 3687174 cycles (2392949 run, 1294225 global-idle)
+sys161:   cpu0: 2392949 kern, 0 user, 0 idle)
+sys161: 614 irqs 5 exns 0r/0w disk 0r/656w console 8r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 0.150219 seconds (24.5453 mhz)
+sys161: Elapsed virtual time: 0.147486977 seconds (25 mhz)
+2%>linux024:[1m~/cs350-os161/root[0m> sys161
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+sys161: Usage: sys161 [sys161 options] kernel [kernel args...]
+sys161:    sys161 options:
+sys161:      -c config      Use alternate config file
+sys161:      -f file        (trace161 only)
+sys161:      -P             (trace161 only)
+sys161:      -p port        Listen for gdb over TCP on specified port
+sys161:      -s             Pass signal-generating characters through
+sys161:      -t[flags]      (trace161 only)
+sys161:      -w             Wait for debugger before starting
+2%>linux024:[1m~/cs350-os161/root[0m> sys161 kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #81)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]: p testbin/palin
+stack 
+Suspended
+2%>linux024:[1m~/cs350-os161/root[0m> sys161 kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #81)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]: p testbin/add 2 4
+stack (null)
+sleep: Dropping thread <boot/menu>
+panic: md_usermode returned
+sys161: 107374182456332901 cycles (2919752 run, 107374182453413149 global-idle)
+sys161:   cpu0: 2919752 kern, 0 user, 0 idle)
+sys161: 936 irqs 5 exns 0r/0w disk 18r/669w console 8r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 3.184650 seconds (3.37162e+10 mhz)
+sys161: Elapsed virtual time: 2.253316057 seconds (25 mhz)
+2%>linux024:[1m~/cs350-os161/root[0m> sys161 kernel[K[K[K[K[K[K[K[K[K[K[K[Ksys161 kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #81)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]:  p  p testbin/add as s
+stack (null)
+sleep: Dropping thread <boot/menu>
+panic: md_usermode returned
+sys161: 214748364952917426 cycles (3691320 run, 214748364949226106 global-idle)
+sys161:   cpu0: 3691320 kern, 0 user, 0 idle)
+sys161: 1427 irqs 5 exns 0r/0w disk 23r/678w console 8r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 6.110658 seconds (3.51432e+10 mhz)
+sys161: Elapsed virtual time: 6.116697057 seconds (25 mhz)
+2%>linux024:[1m~/cs350-os161/root[0m> sys161 kernel[K[K[K[K[K[K[K[K[K[K[K[Kp texs[K[Kstbin/palin 2 4
+p: Command not found.
+2%>linux024:[1m~/cs350-os161/root[0m> p testbin/palin 2 4[33Gsys161 kernel[K
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #81)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]: p testp bin/palin 2 4
+stack (null)
+sleep: Dropping thread <boot/menu>
+panic: md_usermode returned
+sys161: 259487393 cycles (4079880 run, 255407513 global-idle)
+sys161:   cpu0: 4079880 kern, 0 user, 0 idle)
+sys161: 1651 irqs 5 exns 0r/0w disk 22r/675w console 9r/0w/3m emufs 0r/0w net
+sys161: Elapsed real time: 10.379831 seconds (24.9992 mhz)
+sys161: Elapsed virtual time: 10.379495737 seconds (25 mhz)
+2%>linux024:[1m~/cs350-os161/root[0m> sys161 kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #81)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel [? for menu]: p testbin/palein 2
+Running program testbin/palein failed: No such file or directory
+Operation took 0.958916320 seconds
+OS/161 kernel [? for menu]: p eestbin
+Running program eestbin failed: No such file or directory
+Operation took 0.262655600 seconds
+OS/161 kernel [? for menu]: ptes    testbin/palin 2
+stack 
+Suspended
+2%>linux024:[1m~/cs350-os161/root[0m> sys161 kernel[K[K[K[K[K[K[K[K[K[K[K[K./s
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../userprog/runprogram.c
+../../userprog/runprogram.c: In function ‘runprogram’:
+../../userprog/runprogram.c:82: warning: passing argument 2 of ‘copyoutstr’ makes pointer from integer without a cast
+../../userprog/runprogram.c:82: warning: pointer targets in passing argument 4 of ‘copyoutstr’ differ in signedness
+../../userprog/runprogram.c:96: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:104: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:108: warning: initialization makes pointer from integer without a cast
+../../userprog/runprogram.c:108: warning: unused variable ‘user_stack’
+../../conf/newvers.sh ASST2
+*** This is ASST2 build #82 ***
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c vers.c
+cs350-ld   -nostdlib -Ttext 0x80001000 -T ../../arch/mips/conf/ldscript -G 0 lhd.o emu.o random.o rtclock.o pseudorand.o ltrace.o lamebus.o console.o lser.o beep.o lrandom.o ltimer.o rtclock_ltimer.o emu_att.o random_lrandom.o beep_ltimer.o ltrace_att.o pseudorand_att.o con_lser.o lrandom_att.o lser_att.o lhd_att.o ltimer_att.o sfs_io.o sfs_fs.o sfs_vnode.o dumbvm.o cache_mips1.o exception.o lamebus_mips.o interrupt.o pcb.o ram.o spl.o start.o switch.o syscall.o threadstart.o trap.o tlb_mips1.o mips-setjmp.o copyinout.o array.o bitmap.o queue.o kheap.o kprintf.o kgets.o misc.o ntoh.o __printf.o snprintf.o atoi.o bzero.o memcpy.o memmove.o strcat.o strchr.o strcmp.o strcpy.o strlen.o strrchr.o strtok_r.o init.o device.o vfscwd.o vfslist.o vfslookup.o vfspath.o vnode.o devnull.o hardclock.o synch.o scheduler.o thread.o main.o menu.o hello.o loadelf.o runprogram.o uio.o filetablefunction.o userfile.o arraytest.o bitmaptest.o queuetest.o threadtest.o tt3.o synchtest.o malloctest.o fstest.o autoconf.o vers.o -o kernel
+cs350-size kernel
+   text	   data	    bss	    dec	    hex	filename
+ 162952	    448	   7668	 171068	  29c3c	kernel
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #82)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel: p testbin/add 2 4
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 0
+
+Suspended
+2%>linux024:[1m~/cs350-os161/root[0m> 
+2%>linux024:[1m~/cs350-os161/root[0m> ./s
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+make: Nothing to be done for `all'.
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #82)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel: p testbin/add 2 4
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 0
+
+Suspended
+2%>linux024:[1m~/cs350-os161/root[0m> ./s
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+../../userprog/runprogram.c:57:2: error: #else without #if
+../../userprog/runprogram.c:62:2: error: #endif without #if
+make: *** [depend] Error 1
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../userprog/runprogram.c
+../../userprog/runprogram.c: In function ‘runprogram’:
+../../userprog/runprogram.c:19: error: ‘argc’ undeclared (first use in this function)
+../../userprog/runprogram.c:19: error: (Each undeclared identifier is reported only once
+../../userprog/runprogram.c:19: error: for each function it appears in.)
+../../userprog/runprogram.c:20: warning: implicit declaration of function ‘strlen’
+../../userprog/runprogram.c:20: error: ‘argv’ undeclared (first use in this function)
+../../userprog/runprogram.c:22: error: ‘stackptr’ undeclared (first use in this function)
+../../userprog/runprogram.c:24: error: ‘vaddr_t’ undeclared (first use in this function)
+../../userprog/runprogram.c:24: error: expected ‘;’ before ‘pointer1’
+../../userprog/runprogram.c:27: warning: implicit declaration of function ‘assert’
+../../userprog/runprogram.c:30: warning: implicit declaration of function ‘copyout’
+../../userprog/runprogram.c:30: error: ‘NULL’ undeclared (first use in this function)
+../../userprog/runprogram.c:35: error: expected ‘;’ before ‘pointer2’
+../../userprog/runprogram.c:36: error: ‘userptr_t’ undeclared (first use in this function)
+../../userprog/runprogram.c:36: error: expected ‘;’ before ‘argvarrayp’
+../../userprog/runprogram.c:42: warning: implicit declaration of function ‘copyoutstr’
+../../userprog/runprogram.c:42: error: ‘pointer1’ undeclared (first use in this function)
+../../userprog/runprogram.c:43: error: ‘pointer2’ undeclared (first use in this function)
+../../userprog/runprogram.c:55: warning: implicit declaration of function ‘md_usermode’
+../../userprog/runprogram.c:55: error: ‘argvarrayp’ undeclared (first use in this function)
+../../userprog/runprogram.c:56: error: ‘entrypoint’ undeclared (first use in this function)
+../../userprog/runprogram.c:57:2: error: #else without #if
+../../userprog/runprogram.c:62:2: error: #endif without #if
+../../userprog/runprogram.c:64: warning: implicit declaration of function ‘panic’
+../../userprog/runprogram.c:65: error: ‘EINVAL’ undeclared (first use in this function)
+../../userprog/runprogram.c:66: warning: control reaches end of non-void function
+../../userprog/runprogram.c: At top level:
+../../userprog/runprogram.c:6: warning: unused parameter ‘progname’
+make: *** [runprogram.o] Error 1
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #82)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel: p testbin/add 2 4
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 0
+
+Suspended
+2%>linux024:[1m~/cs350-os161/root[0m> ./s
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../userprog/runprogram.c
+../../userprog/runprogram.c: In function ‘runprogram’:
+../../userprog/runprogram.c:82: warning: passing argument 2 of ‘copyoutstr’ makes pointer from integer without a cast
+../../userprog/runprogram.c:82: warning: pointer targets in passing argument 4 of ‘copyoutstr’ differ in signedness
+../../userprog/runprogram.c:96: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:104: warning: passing argument 2 of ‘copyout’ makes pointer from integer without a cast
+../../userprog/runprogram.c:108: warning: initialization makes pointer from integer without a cast
+../../userprog/runprogram.c:108: warning: unused variable ‘user_stack’
+../../conf/newvers.sh ASST2
+*** This is ASST2 build #83 ***
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c vers.c
+cs350-ld   -nostdlib -Ttext 0x80001000 -T ../../arch/mips/conf/ldscript -G 0 lhd.o emu.o random.o rtclock.o pseudorand.o ltrace.o lamebus.o console.o lser.o beep.o lrandom.o ltimer.o rtclock_ltimer.o emu_att.o random_lrandom.o beep_ltimer.o ltrace_att.o pseudorand_att.o con_lser.o lrandom_att.o lser_att.o lhd_att.o ltimer_att.o sfs_io.o sfs_fs.o sfs_vnode.o dumbvm.o cache_mips1.o exception.o lamebus_mips.o interrupt.o pcb.o ram.o spl.o start.o switch.o syscall.o threadstart.o trap.o tlb_mips1.o mips-setjmp.o copyinout.o array.o bitmap.o queue.o kheap.o kprintf.o kgets.o misc.o ntoh.o __printf.o snprintf.o atoi.o bzero.o memcpy.o memmove.o strcat.o strchr.o strcmp.o strcpy.o strlen.o strrchr.o strtok_r.o init.o device.o vfscwd.o vfslist.o vfslookup.o vfspath.o vnode.o devnull.o hardclock.o synch.o scheduler.o thread.o main.o menu.o hello.o loadelf.o runprogram.o uio.o filetablefunction.o userfile.o arraytest.o bitmaptest.o queuetest.o threadtest.o tt3.o synchtest.o malloctest.o fstest.o autoconf.o vers.o -o kernel
+cs350-size kernel
+   text	   data	    bss	    dec	    hex	filename
+ 162952	    448	   7668	 171068	  29c3c	kernel
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #83)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel: p testbin/add 2 4
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 0
+
+Suspended
+2%>linux024:[1m~/cs350-os161/root[0m> ./s
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../arch/mips/mips/syscall.c
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../main/main.c
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c ../../main/menu.c
+../../conf/newvers.sh ASST2
+*** This is ASST2 build #84 ***
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -c vers.c
+cs350-ld   -nostdlib -Ttext 0x80001000 -T ../../arch/mips/conf/ldscript -G 0 lhd.o emu.o random.o rtclock.o pseudorand.o ltrace.o lamebus.o console.o lser.o beep.o lrandom.o ltimer.o rtclock_ltimer.o emu_att.o random_lrandom.o beep_ltimer.o ltrace_att.o pseudorand_att.o con_lser.o lrandom_att.o lser_att.o lhd_att.o ltimer_att.o sfs_io.o sfs_fs.o sfs_vnode.o dumbvm.o cache_mips1.o exception.o lamebus_mips.o interrupt.o pcb.o ram.o spl.o start.o switch.o syscall.o threadstart.o trap.o tlb_mips1.o mips-setjmp.o copyinout.o array.o bitmap.o queue.o kheap.o kprintf.o kgets.o misc.o ntoh.o __printf.o snprintf.o atoi.o bzero.o memcpy.o memmove.o strcat.o strchr.o strcmp.o strcpy.o strlen.o strrchr.o strtok_r.o init.o device.o vfscwd.o vfslist.o vfslookup.o vfspath.o vnode.o devnull.o hardclock.o synch.o scheduler.o thread.o main.o menu.o hello.o loadelf.o runprogram.o uio.o filetablefunction.o userfile.o arraytest.o bitmaptest.o queuetest.o threadtest.o tt3.o synchtest.o malloctest.o fstest.o autoconf.o vers.o -o kernel
+cs350-size kernel
+   text	   data	    bss	    dec	    hex	filename
+ 162952	    448	   7668	 171068	  29c3c	kernel
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #84)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus0
+ltrace0 at lamebus0
+ltimer0 at lamebus0
+hardclock on ltimer0 (100 hz)
+beep0 at ltimer0
+rtclock0 at ltimer0
+lrandom0 at lamebus0
+random0 at lrandom0
+lhd0 at lamebus0
+lhd1 at lamebus0
+lser0 at lamebus0
+con0 at lser0
+pseudorand0 (virtual)
+
+OS/161 kernel: p testbin/add 2 4
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 6
+Unknown syscall 0
+
+Suspended
+2%>linux024:[1m~/cs350-os161/root[0m> nano s
+[?1049h[1;22r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.2.4                 File: s                                         [3;1H(B[m../os161-1.11/kern/conf/script[4dsys161 kernel "p testbin/add 2 4"[20;33H(B[0;7m[ Read 2 lines ][21d^G(B[m Get Help  (B[0;7m^O(B[m WriteOut  (B[0;7m^R(B[m Read File (B[0;7m^Y(B[m Prev Page (B[0;7m^K(B[m Cut Text  (B[0;7m^C(B[m Cur Pos[22d(B[0;7m^X(B[m Exit[14G(B[0;7m^J(B[m Justify   (B[0;7m^W(B[m Where Is  (B[0;7m^V(B[m Next Page (B[0;7m^U(B[m UnCut Text(B[0;7m^T(B[m To Spell[3d[4d[5d[4;34H[1;72H(B[0;7mModified[4;32H(B[m"[K5"[20d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                     [21;1H Y(B[m Yes[K[22d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[20;62H(B[0;7mFile Name to Write: s                                       [21d^G(B[m Get Help[21;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[21;61H(B[0;7mM-B(B[m Backup File[22d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[20;22H[21d[39;49m(B[m[J[1;72H(B[0;7m        [20;32H(B[m[1K (B[0;7m[ Wrote 2 lines ](B[m[K[22;81H[22;1H[?1049l[?1l>2%>linux024:[1m~/cs350-os161/root[0m> nano s[33G./s[K
+../os161-1.11/kern/conf/script: 1: ./u3/d2bajaj/cs350-os161/os161-1.11/kern/conf/config: not found
+cs350-gcc   -mno-abicalls -fno-pic -Wall -W -Wwrite-strings -g -nostdinc -I../../include -I../../dev -I.  -ffreestanding -D_KERNEL -G 0 -M ../../dev/lamebus/lhd.c ../../dev/lamebus/emu.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/generic/pseudorand.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/lamebus.c ../../dev/generic/console.c ../../dev/lamebus/lser.c ../../dev/generic/beep.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/rtclock_ltimer.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/generic/pseudorand_att.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/ltimer_att.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_vnode.c ../../arch/mips/mips/dumbvm.c ../../arch/mips/mips/cache_mips1.S ../../arch/mips/mips/exception.S ../../arch/mips/mips/lamebus_mips.c ../../arch/mips/mips/interrupt.c ../../arch/mips/mips/pcb.c ../../arch/mips/mips/ram.c ../../arch/mips/mips/spl.c ../../arch/mips/mips/start.S ../../arch/mips/mips/switch.S ../../arch/mips/mips/syscall.c ../../arch/mips/mips/threadstart.S ../../arch/mips/mips/trap.c ../../arch/mips/mips/tlb_mips1.S ../../../lib/libc/mips-setjmp.S ../../lib/copyinout.c ../../lib/array.c ../../lib/bitmap.c ../../lib/queue.c ../../lib/kheap.c ../../lib/kprintf.c ../../lib/kgets.c ../../lib/misc.c ../../lib/ntoh.c ../../../lib/libc/__printf.c ../../../lib/libc/snprintf.c ../../../lib/libc/atoi.c ../../../lib/libc/bzero.c ../../../lib/libc/memcpy.c ../../../lib/libc/memmove.c ../../../lib/libc/strcat.c ../../../lib/libc/strchr.c ../../../lib/libc/strcmp.c ../../../lib/libc/strcpy.c ../../../lib/libc/strlen.c ../../../lib/libc/strrchr.c ../../../lib/libc/strtok_r.c ../../dev/init.c ../../fs/vfs/device.c ../../fs/vfs/vfscwd.c ../../fs/vfs/vfslist.c ../../fs/vfs/vfslookup.c ../../fs/vfs/vfspath.c ../../fs/vfs/vnode.c ../../fs/vfs/devnull.c ../../thread/hardclock.c ../../thread/synch.c ../../thread/scheduler.c ../../thread/thread.c ../../main/main.c ../../main/menu.c ../../main/hello.c ../../userprog/loadelf.c ../../userprog/runprogram.c ../../userprog/uio.c ../../userprog/filetablefunction.c ../../userprog/userfile.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/queuetest.c ../../test/threadtest.c ../../test/tt3.c ../../test/synchtest.c ../../test/malloctest.c ../../test/fstest.c ../../compile/ASST2/autoconf.c > depend.mk
+make: Nothing to be done for `all'.
+[ -d /u3/d2bajaj/cs350-os161/root ] || mkdir /u3/d2bajaj/cs350-os161/root
+cp kernel /u3/d2bajaj/cs350-os161/root/kernel-ASST2
+rm -f /u3/d2bajaj/cs350-os161/root/kernel
+ln -s kernel-ASST2 /u3/d2bajaj/cs350-os161/root/kernel
+sys161: System/161 release 1.99.05, compiled Feb  4 2011 15:14:48
+
+OS/161 base system version 1.11
+Copyright (c) 2000, 2001, 2002, 2003
+   President and Fellows of Harvard College.  All rights reserved.
+
+Put-your-group-name-here's system version 0 (ASST2 #84)
+
+Cpu is MIPS r2000/r3000
+336k physical memory available
+Device probe...
+lamebus0 (system main bus)
+emu0 at lamebus
